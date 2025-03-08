@@ -1,0 +1,30 @@
+{
+  "filters": [
+    {
+      "field": "p.name",
+      "operation": "=",
+      "value": "Alice"
+    },
+    {
+      "field": "j.salary",
+      "operation": ">",
+      "value": 50
+    }
+  ],
+  "groupBy": ["l.city"],
+  "having": [
+    {
+      "field": "j.salary",
+      "operation": ">",
+      "value": 30000
+    }
+  ],
+  "orderBy": [
+    {
+      "field": "p.name",
+      "direction": "ASC"
+    }
+  ],
+  "page": 0,
+  "size": 10
+}
